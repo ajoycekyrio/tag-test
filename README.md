@@ -7,3 +7,7 @@ tag 2
 tag 3
 no tag
 tag 4
+
+
+get list of tags
+	git ls-remote --tags origin | awk ' /^(.*)$/ {print $2} '
